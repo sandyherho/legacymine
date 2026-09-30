@@ -40,7 +40,7 @@ charge axis, with a point volume source Q(t),
 \rho\,\partial_t\mathbf{u} = -\nabla p, \qquad
 p = \max\!\left(\rho c^2 s,\; p_v - p_h(z)\right),
 ```
-
+t
 where s is the condensation and the bilinear law holds water at the
 vapour pressure once the incident and surface-reflected waves demand
 tension. The source reproduces the Cole similitude pulse at
