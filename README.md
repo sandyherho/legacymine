@@ -1,4 +1,4 @@
-# Legacy Naval Mines across Ocean Regimes: Idealized Shock, Cavitation, and Bubble Loading
+# Supplementary Materials: "Seabed Control of Shock Loading from Legacy Naval Mines in Idealized Ocean Regimes"
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org)
 [![NumPy](https://img.shields.io/badge/NumPy-%E2%89%A51.24-013243?style=flat-square&logo=numpy&logoColor=white)](https://numpy.org)
