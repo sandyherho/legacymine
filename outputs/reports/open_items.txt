@@ -1,0 +1,33 @@
+Limitations and open items
+==========================
+
+physics
+-------
+  Propagation is linear acoustics with a bilinear cavitation law; the
+  finite-amplitude steepening of the shock and the similitude decay
+  R^(-1.13) are not represented, and the linear model exceeds the
+  similitude peak by up to about 15 percent at the far end of the keel
+  line. The seabed is a lossless fluid without shear, which is a crude
+  description of carbonate rock. The ship is not coupled to the water;
+  keel metrics are field quantities and a single rigid Taylor element.
+  The gas bubble is not part of the acoustic source, and its jet
+  direction is a leading-order Kelvin-impulse estimate that is invalid
+  where the bubble reaches a boundary, which includes the reference
+  charge 3 m above the bed.
+
+numerics
+--------
+  Cavitation closure near the axis leaves grid-scale speckle in the
+  cavitated region, visible in the animations over the reef. Receivers
+  within 10 m of the sponge are excluded. The axis focuses any sponge
+  reflection; for the reference domain these arrive after the
+  simulated time.
+
+inputs
+------
+  Regime profiles and seabed constants are illustrative. Charge ageing
+  enters only through eta; no corrosion or degradation kinetics are
+  modelled. The DOIs listed in the README other than Supponen et al.
+  (2016) have not yet been checked against the publisher records and
+  must be verified before citation.
+

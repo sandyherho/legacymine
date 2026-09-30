@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "legacymine"
+version = "0.0.1"
+description = "Idealized shock, cavitation and bubble loading from legacy naval mines across ocean regimes"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Sandy H. S. Herho" },
+    {name = "Candrasa S. Dharma" },
+    {name = "Agus W. Jatmiko" },
+    {name = "Rusmawan Suwarman" },
+    {name = "Deny J. Puradimaja" },
+    {name = "Dasapta E. Irawan" }
+]
+keywords = ["underwater explosion", "legacy munitions", "naval mines",
+            "cavitation", "Baltic Sea", "Indonesia", "TEOS-10"]
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = [
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "matplotlib>=3.7",
+    "pillow>=10.0",
+    "gsw>=3.6",
+]
+
+[project.optional-dependencies]
+lint = ["pycodestyle>=2.11", "pydocstyle>=6.3"]
+
+[tool.setuptools]
+packages = ["legacymine"]
+
+[tool.pydocstyle]
+convention = "pep257"

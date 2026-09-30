@@ -1,0 +1,46 @@
+Symbols, units, and reference values
+====================================
+
+units
+-----
+  All quantities are SI except where a figure axis states MPa, kPa s,
+  or ms. Depth z is positive downward from the sea surface; r is the
+  horizontal distance from the vertical axis through the charge.
+
+geometry and grid
+-----------------
+  water depth H = 50.0 m, charge depth 47.0 m, keel line 5.0 m
+  grid spacing h = 0.125 m, domain r <= 120.0 m plus 60 sponge cells, simulated time
+  0.105 s, water Courant number <= 0.45
+
+charge
+------
+  W = 300.0 kg TNT equivalent, eta = 1.0
+  similitude: K_P = 52.16 MPa, A_P = 1.13, K_T = 92.5 us kg^-1/3, A_T = 0.22
+  monopole calibrated at R_ref = 40.0 m: P = 6.9192 MPa, theta = 0.9176 ms, rise 0.15 ms
+  bubble: J = 3.38 m kg^-1/3 m^1/3, e_b = 1.6264 MJ/kg
+
+hull element
+------------
+  areal mass m = 94.2 kg m^-2 (12 mm steel)
+
+regimes (illustrative, not observations)
+----------------------------------------
+  regime          | T top/bot (C) | S top/bot (g/kg) | bed       | rho_b  | c_b    | A     | R_0   | theta_c
+  ----------------------------------------------------------------------------------------------------
+  baltic_summer   |  17.0 /   4.0 |   7.00 /   7.40  | soft mud  |   1450 | 1417.7 | 0.181 | 0.176 |   none
+  baltic_winter   |   2.5 /   4.0 |   7.00 /   7.40  | soft mud  |   1450 | 1417.7 | 0.181 | 0.176 |   none
+  north_sea       |  12.0 /  10.5 |  34.80 /  34.80  | fine sand |   1900 | 1671.1 | 0.298 | 0.349 |  63.23
+  adriatic        |  24.0 /  14.0 |  38.00 /  38.50  | silt      |   1700 | 1553.4 | 0.246 | 0.260 |  76.14
+  java_sea        |  29.5 /  28.5 |  32.00 /  32.80  | silty mud |   1600 | 1556.0 | 0.221 | 0.226 |  81.93
+  indo_reef       |  29.0 /  27.5 |  33.80 /  34.20  | carbonate |   2400 | 3002.8 | 0.403 | 0.642 |  30.85
+
+provenance
+----------
+  Similitude constants are the TNT values widely tabulated after Cole
+  (1948). Water properties are TEOS-10 through gsw, with salinity read
+  as Absolute Salinity and the Baltic composition anomaly ignored.
+  Temperature and salinity profiles and seabed constants are round
+  values inside the ranges usually quoted for each setting. None is a
+  measurement at a site.
+

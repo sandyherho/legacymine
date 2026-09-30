@@ -1,0 +1,42 @@
+Key results
+===========
+
+keel line at r = 60 m (fresh charge)
+------------------------------------
+  regime          | peak (MPa) | I (kPa s) | I_inc/I_free | kick (m/s) | entropy
+  ----------------------------------------------------------------------------
+  baltic_summer   |      3.471 |     5.621 |        1.265 |      4.517 |   0.422
+  baltic_winter   |      3.424 |     5.672 |        1.239 |      4.630 |   0.417
+  north_sea       |      3.440 |     6.510 |        1.430 |      4.347 |   0.485
+  adriatic        |      3.479 |     5.948 |        1.359 |      4.287 |   0.447
+  java_sea        |      3.454 |     5.823 |        1.333 |      4.274 |   0.435
+  indo_reef       |      3.897 |     8.761 |        1.763 |      4.554 |   0.520
+
+cavitation
+----------
+  regime          | cavitated area (m^2, half-plane) | longest (ms)
+  ----------------------------------------------------------------
+  baltic_summer   |                           2643.5 |        71.66
+  baltic_winter   |                           2235.5 |        71.14
+  north_sea       |                           3237.4 |        72.17
+  adriatic        |                           3275.9 |        72.99
+  java_sea        |                           3130.7 |        73.60
+  indo_reef       |                           3673.4 |        72.84
+
+bubble at the charge depth
+--------------------------
+  baltic_summer   R_m = 5.916 m, T = 0.4577 s
+  baltic_winter   R_m = 5.915 m, T = 0.4576 s
+  north_sea       R_m = 5.882 m, T = 0.4558 s
+  adriatic        R_m = 5.880 m, T = 0.4559 s
+  java_sea        R_m = 5.893 m, T = 0.4564 s
+  indo_reef       R_m = 5.890 m, T = 0.4563 s
+
+aged charge
+-----------
+  Every similitude length scales with (eta W)^(1/3). A charge that
+  retains 20 percent of its yield has 0.585 times the hazard radius,
+  bubble radius, and bubble period scale of a fresh one, and 5 percent
+  retains 0.368 times. Large losses of yield therefore shrink the
+  hazard only modestly.
+

@@ -1,0 +1,41 @@
+Verification
+============
+
+results
+-------
+  free field, max relative error vs h:
+    h = 0.400 m   2.6034e-02
+    h = 0.200 m   2.2230e-02
+    h = 0.100 m   8.9094e-03
+    h = 0.050 m   2.6119e-03
+  observed orders: 0.23, 1.32, 1.77
+  Lloyd mirror, max error / peak: 1.2660e-02
+  seabed reflection, numerical / theory:
+    baltic_summer   0.9947
+    baltic_winter   0.9947
+    north_sea       0.9882
+    adriatic        0.9913
+    java_sea        0.9938
+    indo_reef       0.9663
+  cavitating keel peak vs water Courant number (reduced domain):
+    C = 0.60: r = 0 m 6.142 MPa, r = 20 m 5.367 MPa
+    C = 0.45: r = 0 m 6.350 MPa, r = 20 m 5.593 MPa
+    C = 0.30: r = 0 m 6.464 MPa, r = 20 m 5.752 MPa
+  Taylor plate integrator, max |v - v_exact|: 8.887e-06 m/s
+  Rayleigh period / tabulated TNT period at 47.0 m: 0.9416
+
+notes
+-----
+  The exact free-field solution includes the Gaussian source smoothing
+  of width 1.5 h. The observed order approaches two, the order of the
+  leapfrog step; the fourth-order spatial stencil is not the limiting
+  error. The axis flux is written in conservative form, so the
+  injected volume is conserved to round-off; a symmetric ghost for r
+  u_r lost 1.65 percent of the source at every resolution and was
+  rejected. At water Courant numbers near 0.9, closure of cavitated
+  water produced growing water-hammer oscillations and a ringing
+  precursor ahead of sharp fronts; all runs therefore cap the water
+  Courant number at 0.45. The remaining spread of the cavitating keel
+  peak, a few percent between Courant numbers 0.3 and 0.6, is the
+  uncertainty attached to closure pulses.
+
